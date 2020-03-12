@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text} from 'react-native';
 
-import Style from '../styles/Style'
+import Style from '../styles/Style';
 
 // export default function(props) {
 //   return <Text>Arrow {props.texto}</Text>;

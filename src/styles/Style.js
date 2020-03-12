@@ -8,6 +8,7 @@ export default StyleSheet.create({
         borderWidth: 2,
         borderColor: '#222',
         fontSize: 25,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        marginTop: 50
     }
 })
