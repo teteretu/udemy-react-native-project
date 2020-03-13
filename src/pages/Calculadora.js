@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { View, StyleSheet, StatusBar, Text } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 
-import Button from "./Button";
+import Button from "../components/Button";
 
 const initialState = {
   displayValue: "0",
@@ -65,7 +65,6 @@ export default class Calculadora extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar hidden />
         <View style={styles.titleView}>
           <Text style={styles.title} numberOfLines={1}>
             {this.state.displayValue}

@@ -2,22 +2,27 @@ import React from "react";
 import { createAppContainer, createSwitchNavigator } from "react-navigation";
 import { createDrawerNavigator } from "react-navigation-drawer";
 
-import Simples from "./components/Simples";
-import ParImpar from "./components/ParImpar";
-import Inverter, { MegaSena } from "./components/Multi";
-import Contador from "./components/Contador";
-import Plataformas from "./components/Plataformas";
-import ValidarProps from "./components/ValidarProps";
-import Evento from "./components/Evento";
-import Avo from "./components/ComunicacaoDireta";
-import TextoSincronizado from "./components/ComunicacaoIndireta";
-import ListaFlex from "./components/ListaFlex";
-import Flex from "./components/Flex";
-import Calculadora from "./components/Calculadora";
+import Simples from "./pages/Simples";
+import ParImpar from "./pages/ParImpar";
+import Inverter, { MegaSena } from "./pages/Multi";
+import Contador from "./pages/Contador";
+import Plataformas from "./pages/Plataformas";
+import ValidarProps from "./pages/ValidarProps";
+import Evento from "./pages/Evento";
+import Avo from "./pages/ComunicacaoDireta";
+import TextoSincronizado from "./pages/ComunicacaoIndireta";
+import ListaFlex from "./pages/ListaFlex";
+import Flex from "./pages/Flex";
+import Calculadora from "./pages/Calculadora";
+import Mines from "./pages/Mines";
 
 const DrawerNavitagor = createDrawerNavigator({
+  Mines: {
+    screen: props => <Mines {...props} />,
+    navigationOptions: { title: "Minefield" }
+  },
   Calculadora: {
-    screen: props => <Calculadora {...props}/>,
+    screen: props => <Calculadora {...props} />,
     navigationOptions: { title: "Calculator" }
   },
   Flex: {
