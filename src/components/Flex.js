@@ -1,5 +1,5 @@
 import React from "react";
-import { View, StyleSheet, StatusBar } from "react-native";
+import { View, StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   container: {
@@ -38,7 +38,6 @@ const Circulo = props => <View style={styles.circulo}></View>;
 export default props => {
   return (
     <View style={styles.container}>
-      <StatusBar hidden />
       <View style={styles.norte}>
         <Circulo />
       </View>

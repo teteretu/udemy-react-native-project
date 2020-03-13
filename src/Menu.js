@@ -13,8 +13,13 @@ import Avo from "./components/ComunicacaoDireta";
 import TextoSincronizado from "./components/ComunicacaoIndireta";
 import ListaFlex from "./components/ListaFlex";
 import Flex from "./components/Flex";
+import Calculadora from "./components/Calculadora";
 
 const DrawerNavitagor = createDrawerNavigator({
+  Calculadora: {
+    screen: props => <Calculadora {...props}/>,
+    navigationOptions: { title: "Calculator" }
+  },
   Flex: {
     screen: props => <Flex {...props} numeroInicial={8} />,
     navigationOptions: { title: "Flex" }
